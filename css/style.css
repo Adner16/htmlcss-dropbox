@@ -80,7 +80,6 @@ header{
     width: calc(33% - 40px);
     margin-right: 40px;
     background-color: red;
-    /* float: left; */
 }
 
 .col.w-60{
@@ -89,4 +88,33 @@ header{
 
 .col.w-40{
     width: 40%;
+}
+
+
+.col.w-33{
+    width: 33%;
+    height: 400px;
+    position: relative;
+}
+
+.box{
+    width: 50%;
+    height: 50%;
+    background-color: red;
+    position: absolute;
+}
+
+.box.up-right{
+    top: 0;
+    right: 0;
+}
+
+.box.down-left{
+    bottom: 0;
+    left: 0;
+}
+
+.box.down-right{
+    bottom: 0;
+    right: 0;
 }
