@@ -118,3 +118,12 @@ header{
     bottom: 0;
     right: 0;
 }
+
+/* footer */
+
+.col.w-20{
+    width: calc(20% - 40px);
+    margin-right: 40px;
+    float: left
+    ;
+}
