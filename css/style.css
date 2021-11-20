@@ -388,17 +388,60 @@ main .btn.blue{
 
 /* faq */
 
+.faq{
+    padding-top: 100px;
+    margin-bottom: 60px;
+}
+.faq span{
+    margin: 50px 0;
+}
+
 
 
 
 
 /* footer */
 
+footer{
+    background-color: black;
+    color: white;
+    line-height: 22px;
+    font-size: 13px;
+}
+
+.footer-container{
+    padding: 50px 0;
+}
+
+.row{
+    /* padding-bottom: 50px; */
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer h4{
+    font-size: 16px;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+.size-hr-footer{
+    width: 10%;
+    margin-top: 100px
+}
+
 .col.w-20{
     width: calc(20% - 40px);
     margin-right: 40px;
     float: left;
 }
+
+
 
 
 
@@ -411,7 +454,7 @@ main .btn.blue{
 4- margin cards
 5- colore bordo cards
 6-price bold/ margin span
-
+7 ontenuto row footer
 
 
 */
