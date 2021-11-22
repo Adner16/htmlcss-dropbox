@@ -5,10 +5,9 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
     font-family: 'Open Sans', sans-serif;
-    font-family: 'Varela Round', sans-serif;
 }
+
 
 img {
     max-width: 100%;
@@ -35,13 +34,23 @@ img {
 }
 .btn{
     text-decoration: none;
-
     padding: 5px 10px;
+    line-height: 80px;
+    font-size: 15px;
 } 
 .btn.blue{
     background-color: rgba(6,95,246,255);
     color: white;
     border: 1px solid rgba(6,95,246,255);
+}
+.btn:hover{
+    filter: brightness(1.5);
+}
+
+.btn .white{
+    background-color: whihte;
+    color: black;
+    border: 1px solid black;
 }
 
 .float-left{
@@ -63,6 +72,12 @@ header{
     height: 80px;
     line-height: 80px;
     font-size: 14px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1;
+    border-bottom: 1px solid lightgrey;
 }
 
 .col.w-50{
@@ -81,6 +96,7 @@ header{
      color: black;
      text-decoration: none;
      margin: 0 20px;
+     vertical-align: middle;
 }
 #inizia{
     margin: 0 20px;
@@ -93,13 +109,14 @@ header{
     background-color: rgba(180,208,231,255);
 }
 .first.jumbotron{
-    height: 710px;
+    height: 790px;
 }
 
 .jumbotron h1{
     font-size: 75px;
-    padding-top: 90px; 
+    padding-top: 170px; 
     padding-bottom: 40px;
+    /* font-weight: bolder; */
 }
 
 .jumbotron p{
@@ -109,8 +126,14 @@ header{
 .jumbotron span{
     font-size: 12px;
 }
-.jumbotron a{
-    margin-bottom: 30px;
+
+ .first.jumbotron .fas{
+    margin: 30px 0;
+} */
+
+.first.jumbotron .arrow{
+    width: 70px;
+    height: 70px;
 }
 
 .col.w-30{
@@ -140,18 +163,12 @@ main h3{
 }
 main h4{
     font-size: 15px;
-    /* font-weight: bold; */
     margin-top: 40px;
     margin-bottom: 20px;
 }
 
 main span{
     font-size: 14px;
-    /* margin-top: 30px; */
-}
-
-main .btn.blue{
-    /* margin: 30px 0; */
 }
 
 .circle{
@@ -159,12 +176,14 @@ main .btn.blue{
     height: 15px;
     display: inline-block;
     border-radius: 50%;
-    border: 1px solid grey;
+    border: 1px solid lightgrey;
 }
+
 .circle.blue{
     background-color: blue;
     position: relative;
 }
+
 .inner-circle{
     width: 8px;
     height: 8px;
@@ -176,21 +195,47 @@ main .btn.blue{
     transform: translate(-50%, -50%);
 }
 
+.circle.white{
+    margin-left: 20px;
+}
+
+.card.border{
+    margin-top: 30px;
+}
 
 .card{
-    width: calc(33.33% - 40px);
-    margin-right: 40px;
+    width: calc(100% / 3 - 40px);
     padding-bottom: 100px;
+    margin: 0 20px;
+}
+
+.row{
+    margin-right: -20px;
+    margin-left: -20px;
+}
+
+.card .container .btn{
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 40px;
+    display: block;
+    text-align: center;
+    padding: px 0;
+    line-height: 20px;
+}
+
+.card .container span{
+    line-height: 20px;
 }
 
 .border{
-    border: 1px solid grey;
+    border: 1px solid lightgrey;
 }
 
 
 
 .card-top{
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid lightgrey;
     text-align: center;
     height: 40px;
     line-height: 40px;
@@ -198,21 +243,46 @@ main .btn.blue{
 
 .price{
     font-weight: bold;
-    /* padding-bottom: 30px; */
 }
 
 .utente{
     font-size: 13px;
     color: grey;
-    /* margin-top: 30px; */
 }
 
 .size-hr{
     width: 20%;
+    margin: 30px 0;
 }
 
+.card ul{
+    margin-top: 30px;
+}
+
+.card li{
+    line-height: 35px;
+    font-size: 15px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  li {
+    padding-left: 1.3em;
+  }
+  li:before {
+    content: ""; /* FontAwesome Unicode */
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-left: -1.3em;
+    width: 1.3em; 
+  }
+  
+
 .bottom-card{
-    border: 1px solid grey;
+    border: 1px solid lightgrey;
     margin-top: 50px;
     margin-bottom: 100px;
 }
@@ -221,6 +291,7 @@ main .btn.blue{
     position: absolute;
     top: 0;
     right: 0;
+    line-height: 20px;
 }
 
 .container-bottom-card{
@@ -250,6 +321,13 @@ main .btn.blue{
     position: relative;
 }
 
+.col.w-40 .col-container a{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    padding: 10px 15px;
+}
+
 .title2{
     margin-top: 100px;
 }
@@ -261,18 +339,18 @@ main .btn.blue{
 
 /* brand section */
 
-.col-left.w-33{
-    width: 33.33%;
+.col-left.w-30{
+    width: 30%;
     height: 400px;
     position: relative;
 }
-.col-center.w-33{
-    width: 33.33%;
+.col-center.w-40{
+    width: 40%;
     height: 400px;
     position: relative;
 }
-.col-right.w-33{
-    width: 33.33%;
+.col-right.w-30{
+    width: 30%;
     height: 400px;
     position: relative;
 }
@@ -280,7 +358,6 @@ main .btn.blue{
 .box{
     width: 50%;
     height: 50%;
-    /* background-color: red; */
     position: absolute;
 }
 
@@ -384,6 +461,13 @@ main .btn.blue{
 .second.jumbotron h2{
     color: rgba(98,20,43,255);
 }
+.second.jumbotron a{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    line-height: 40px;
+    padding: 0 60px;
+}
 
 
 /* faq */
@@ -391,13 +475,30 @@ main .btn.blue{
 .faq{
     padding-top: 100px;
     margin-bottom: 60px;
+    line-height: 80px;
+    font-weight: bold;
+    padding-bottom: 50px;
 }
+
+.faq h2{
+    font-size: 35px;
+}
+
 .faq span{
     margin: 50px 0;
 }
 
+.faq .fas{
+    text-align: right;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
 
-
+.relative{
+    position: relative;
+}
 
 
 /* footer */
@@ -407,10 +508,12 @@ footer{
     color: white;
     line-height: 22px;
     font-size: 13px;
+    padding-bottom: 50px;
+    padding-top: 70px;
 }
 
 .footer-container{
-    padding: 50px 0;
+    /* padding: 50px 0; */
 }
 
 .row{
@@ -422,17 +525,21 @@ footer ul{
 }
 
 footer h4{
-    font-size: 16px;
+    font-size: 18px;
+    line-height: 65px;
 }
 
 footer a{
     text-decoration: none;
     color: white;
+    line-height: 25px;
 }
 
 .size-hr-footer{
-    width: 10%;
-    margin-top: 100px
+    width: 8%;
+    margin-bottom: 40px;
+    margin-top: 80px;
+
 }
 
 .col.w-20{
@@ -441,20 +548,17 @@ footer a{
     float: left;
 }
 
+.ita{
+    color: grey;
+}
 
 
+/* da fare
 
-
-
-/* domande
-
-1- Font
-2- spazio btn header
-3- icon
-4- margin cards
-5- colore bordo cards
-6-price bold/ margin span
-7 ontenuto row footer
-
+- spazio annulla in qualsiasi momento
+- bold
+-centramento cerchi
+- cambiare colore al cheack e posizione
+-box che si illuminano
 
 */
