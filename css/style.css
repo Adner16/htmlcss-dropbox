@@ -115,7 +115,6 @@ header{
     font-size: 70px;
     padding-top: 150px; 
     padding-bottom: 40px;
-    /* font-weight: bolder; */
 }
 
 .jumbotron p{
@@ -268,23 +267,6 @@ ul.icon-list li{
 ul.icon-list.check i{
     color: blue;
 }
-
-
-/* ul {
-    list-style: none;
-    padding: 0;
-  }
-
-  li {
-    padding-left: 1.3em;
-  }
-  li:before {
-    content: ""; /* FontAwesome Unicode
-    font-family: FontAwesome;
-    display: inline-block;
-    margin-left: -1.3em;
-    width: 1.3em; 
-  } */
   
 
 .bottom-card{
@@ -527,14 +509,6 @@ footer{
     padding-top: 70px;
 }
 
-.footer-container{
-    /* padding: 50px 0; */
-}
-
-.row{
-    /* padding-bottom: 50px; */
-}
-
 footer ul{
     list-style: none;
 }
@@ -566,10 +540,3 @@ footer a{
 .ita{
     color: grey;
 }
-
-
-/* da fare
-
--box che si illuminano
-
-*/
