@@ -367,6 +367,7 @@ ul.icon-list.check i{
     width: 50%;
     height: 50%;
     position: absolute;
+    transition: 1s;
 }
 
 .image{
@@ -378,8 +379,8 @@ ul.icon-list.check i{
 }
 
 .box:hover{
-    border: 10px solid transparent;
-    filter: brightness(1.5);
+    border: 10px solid  rgba(125,125,125,0.5);
+    filter: brightness(1.2);
 }
 
 
